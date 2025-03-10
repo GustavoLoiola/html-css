@@ -1,7 +1,20 @@
 body {
    
-    background-image: url(espaco.jpg);
-    background-position: center;
+    background-image: url('espaco.jpg');
+    background-size: cover;
     background-repeat: no-repeat;
+    height: 100vh;
+    background-attachment: fixed;
+    position: relative;
+}
+
+#as {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 15%;
+    left: 32%;
+    
 }
 
