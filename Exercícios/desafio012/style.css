@@ -8,7 +8,7 @@
 
 @font-face {
     font-family:'PassionOne';
-    src: url('PassionOne-Regular.ttf');
+    src: url('Passion_One/PassionOne-Regular.ttf');
 }
     
   
@@ -16,8 +16,8 @@
   
 :root {
     --font1: Verdana, Geneva, Tahoma, sans-serif;
-    --font2: 'Sriracha', cursive;
-    --font3: 'PassionOne', cursive;
+    --font3: 'Sriracha', cursive;
+    --font2: 'PassionOne', cursive;
 }
 
 * {
@@ -35,9 +35,15 @@ html, body {
 section > pre {
     white-space: pre-line;
     font-family: var(--font3);
-    font-size: 3vw;
+    font-size: 2.6vw;
+    line-height: 1.5em;
+    
 }
 
+section > p {
+    padding-bottom: 2em;
+    
+}
 header {
     background-color: black;
     color: white;
@@ -81,13 +87,28 @@ section.normal {
 section.imagem {
     background-color: rgb(53, 51, 51);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.567);
+    background-attachment: fixed;
 }
 
-section.imagem > p {
+section.imagem > pre {
     display: inline-block;
     padding: 5px;
-    width: 400px;
-    background-color: rgba(0, 0, 0, 0.253);
+    background-color: rgba(0, 0, 0, 0.544);
+    text-shadow: 1px 1px 0px black;
+}
+
+section#img01 {
+    background-image: url(imagens/background001.jpg);
+    background-position: right center;
+    background-size: cover;
+}
+
+section#img02 {
+    background-image: url(imagens/background002.jpg);
+    background-position: right center;
+    background-size: cover;
+
 }
 
 footer {
@@ -95,5 +116,6 @@ footer {
     color: white;
     text-align: center;
     padding: 10px;
+    font-size: 1.7vw;
 
 }
