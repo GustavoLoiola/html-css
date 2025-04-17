@@ -10,23 +10,23 @@
 </head>
 <body>
     <header>
-        <menu>
-            <p>Central Delivey: (11)91234-5678</p>
-                <img src="imagens/zap.avif" alt="whatsapp" class="r">
-                <img src="imagens/logo-instagram.jpg" alt="Instagram" class="r">
-                <img src="imagens/logo-facebook.jpg" alt="Facebook" class="r">
-        </menu>
-        <h1>Sua Pizzaria!</h1>
-        <img src="imagens/logoPNG.webp" alt="logo da pizzaria" id="logo">
-        <span class="material-symbols-outlined" id="burguer">
-            menu
-            </span>
-            <ul>
-                <li>Nossa Casa</li>
-                <li>Cardápio</li>
-                <li>Faça sua reserva</li>
-                <li>Delivery</li>
+        <span id="principal">
+                <a href="#"><img src="imagens/zap.avif" alt="whatsapp" class="r"></a>
+                <a href="#"><img src="imagens/logo-instagram.jpg" alt="Instagram" class="r"></a>
+                <a href="#"><img src="imagens/logo-facebook.jpg" alt="Facebook" class="r"></a>
+                <p>Central Delivey: (11) 91234-5678</p>
+                <h1>Sua Pizzaria!</h1>
+        </span>
+       
+        <span class="material-symbols-outlined" id="burguer" onclick="clickMenu()">menu</span>
+         <menu id="itens">
+             <ul>
+                <li><a href="#">Nossa Casa</a></li>
+                <li><a href="#">Cardápio</a></li>
+                <li><a href="#">Faça sua reserva</a></li>
+                <li><a href="#">Delivery</a></li>
             </ul>
+         </menu>
     </header>
     <main>
         <section>
@@ -34,5 +34,14 @@
         </section>
     </main>
 
+    <script>
+        function clickMenu() {
+           if (itens.style.display == 'block') {
+            itens.style.display = 'none'
+           } else {
+            itens.style.display = 'block'
+           }
+        }
+    </script>
 </body>
 </html>

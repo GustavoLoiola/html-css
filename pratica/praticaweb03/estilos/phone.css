@@ -1,5 +1,12 @@
 @charset "UTF-8";
 
+/* 
+#fff1c5 quase branco
+#ad3805 marrom
+#065d33 verde
+#d27800 terra
+*/
+
 @font-face {
     font-family: 'cursiva';
     src: url(../imagens/Madina.ttf);
@@ -7,52 +14,65 @@
 
 * {
     font-family: Arial, Helvetica, sans-serif;
-    margin: 0px;
+   margin: 0px;
 }
 
-header > h1 {
+header > span#principal > h1 {
     font-family: cursiva;
     font-size: 4em;
     text-align: center;
-    justify-content: center;
-    color: rgba(0, 0, 0, 0.845);
+    color: #ad3805;
 }
 
 header {
-    background-color: rgb(96, 96, 197);
+    background-color:#fff1c5;
 }
 
-menu > p {
-    color: white;
-    padding-top: 20px;
+span#principal {
+    padding: 10px;
+}
+
+span#principal > p {
+    color: #ad3805;
+    padding: 20px;
 }
 
 img.r {
     float: right; 
+    padding: 2px;
     margin: 0px;
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
-    padding: 5px;
-}
-
-img#logo {
-    width: 150px;
-    height: 100px;
 }
 
 span#burguer {
+    background-color: #ad3805;
     padding: 10px;
     border: 2px solid black;
     text-align: center;
     align-items: center;
     display: block;
+    cursor: pointer;
 }
 
-header > ul > li {
+header > menu > ul > li {
    list-style-type: none;
    padding: 10px;
    border: 2px solid black;
    text-align: center;
    margin: auto;
+}
+
+header > menu {
+    display: none;
+    margin: auto;
+}
+
+menu#itens > ul > li > a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    color: black;
 }
