@@ -14,18 +14,20 @@
 
 * {
     font-family: Arial, Helvetica, sans-serif;
-   margin: 0px;
+    margin: 0px;
+    margin: auto;
 }
 
 header > span#principal > h1 {
     font-family: cursiva;
-    font-size: 4em;
+    font-size: 2em;
     text-align: center;
     color: #ad3805;
 }
 
 header {
     background-color:#fff1c5;
+    width: 100vw;
 }
 
 span#principal {
@@ -34,15 +36,15 @@ span#principal {
 
 span#principal > p {
     color: #ad3805;
-    padding: 20px;
+    padding: 10px;
 }
 
 img.r {
     float: right; 
     padding: 2px;
     margin: 0px;
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
     border-radius: 50%;
 }
 
@@ -56,23 +58,19 @@ span#burguer {
     cursor: pointer;
 }
 
-header > menu > ul > li {
-   list-style-type: none;
-   padding: 10px;
-   border: 2px solid black;
-   text-align: center;
-   margin: auto;
-}
 
-header > menu {
+
+header > menu#itens {
     display: none;
     margin: auto;
+    padding-left: 0px;
 }
 
-menu#itens > ul > li > a {
+a.men {
     display: block;
-    padding: 10px;
+    padding: 8px;
     text-decoration: none;
     text-align: center;
     color: black;
+    border: 2px solid black;
 }
