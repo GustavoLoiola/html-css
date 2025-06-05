@@ -1,4 +1,12 @@
 @charset "UTF-8";
+@font-face {
+    font-family:'h1' ;
+    src: url(fontes/love\ story\ ttf.ttf);
+}
+@font-face {
+    font-family: 'romantico';
+    src: url(fontes/Cream\ Cake.otf);
+}
 
 /* 
 Quase branco = #ECD8E0
@@ -7,3 +15,70 @@ Salmao = #C75C71
 Vermelho escuro = #791127
 Bordo = #560F20
 */
+
+
+* {
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image: linear-gradient(#C40C02);
+    overflow-x: hidden;
+   
+}
+
+header {
+    display: flex;
+    background-image: url(imagens/fundo.coracao.webp);
+    background-repeat: repeat;
+    height: 300px;
+    width: 100vw;
+}
+
+header > menu > div {
+    height: 400px;
+    width:90vw;
+    text-align: center;
+}
+
+header > menu > div > a {
+    background-color: #C40C02;
+    text-decoration: none;
+    color: black;
+    font-size: 2em;
+    border: 2px solid black;
+    border-radius: 5px;
+    flex: auto;
+    align-self: center;
+    align-items: center;
+}
+
+h1 {
+     font-family:'h1';
+     text-align: center;
+     font-size: 2em;
+}
+
+p.carta {
+     font-family: 'romantico';
+     text-align: center;
+     font-size: 2em;
+     background-color: rgba(255, 255, 255, 0.355);
+}
+
+div.foto {
+    display: flex;
+}
+
+div.foto > img {
+    flex: auto;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+
+footer {
+    height: 300px;
+    background-image: url(imagens/fundo.coracao.webp);
+}
