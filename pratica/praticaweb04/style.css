@@ -35,23 +35,24 @@ header {
     height: 300px;
     width: 100vw;
     align-items: center;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex-direction: column;
 }
 
 
 header > p.link > a {
     padding: 4px;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.892);
     text-decoration: none;
     color: white;
-    font-size: 0.8em;
-    border: 2px solid black;
-    border-radius: 5px;
+    font-size: 1.3em;
+    border: 2px solid #560F20;
+    border-radius: 8px;
     flex: auto;
     align-self: center;
     align-items: center;
+    padding: 15px;
 }
 
 header > p.link > a:hover {
@@ -70,20 +71,23 @@ p.carta {
      text-align: center;
      font-size: 2em;
      background-color: rgba(255, 255, 255, 0.355);
+     text-shadow: 1px 0px 0px rgba(0, 0, 0, 0.314);
 }
 
-div.foto {
+div#foto {
     display: flex;
+    background-attachment: fixed;
 }
 
-div.foto > img {
+div#foto > img#foto1 {
     flex: auto;
     justify-content: center;
     align-items: center;
     width: 100vw;
+    background-attachment: fixed;
 }
 
 footer {
-    height: 170px;
+    height: 168px;
     background-image: url(imagens/fundo.coracao.webp);
 }
