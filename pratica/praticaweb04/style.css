@@ -34,19 +34,19 @@ header {
     background-repeat: repeat;
     height: 300px;
     width: 100vw;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    
 }
 
-header > menu > div {
-    height: 400px;
-    width:90vw;
-    text-align: center;
-}
 
-header > menu > div > a {
-    background-color: #C40C02;
+header > p.link > a {
+    padding: 4px;
+    background-color: black;
     text-decoration: none;
-    color: black;
-    font-size: 2em;
+    color: white;
+    font-size: 0.8em;
     border: 2px solid black;
     border-radius: 5px;
     flex: auto;
@@ -54,10 +54,15 @@ header > menu > div > a {
     align-items: center;
 }
 
+header > p.link > a:hover {
+    background-color:#560F20;
+}
+
 h1 {
      font-family:'h1';
      text-align: center;
      font-size: 2em;
+     padding: 10px;
 }
 
 p.carta {
@@ -79,6 +84,6 @@ div.foto > img {
 }
 
 footer {
-    height: 300px;
+    height: 170px;
     background-image: url(imagens/fundo.coracao.webp);
 }
