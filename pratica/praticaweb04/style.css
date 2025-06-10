@@ -24,7 +24,7 @@ Bordo = #560F20
 }
 
 body {
-    background-image: linear-gradient(to left, #791127,#560F20);
+    background-image: linear-gradient(to left, #E26E88, #791127);
     overflow-x: hidden;
    
 }
@@ -58,10 +58,12 @@ header > p.link > a {
 }
 
 header > p.link > a:hover {
-    background-color: #C75C71;
+    background-color:#791127 ;
+    transition: 0.8s;
 }
 
 h1 {
+     color: white;
      font-family:'h1';
      text-align: center;
      font-size: 2em;
@@ -69,11 +71,13 @@ h1 {
 }
 
 p.carta {
+     margin: 5px;
+     color: white;
      font-family: 'romantico';
      text-align: center;
      font-size: 2em;
-     background-color: rgba(255, 255, 255, 0.355);
-     text-shadow: 1px 0px 0px rgba(0, 0, 0, 0.314);
+    
+     text-shadow: 1px 0px 0px rgba(0, 0, 0, 0.692);
 }
 
 div.foto {
@@ -105,9 +109,7 @@ footer {
 body {
     background-image: linear-gradient(to left, #C40C02,  #560F20 );
     overflow-x: hidden;
-   
 }
-
 
 header {
     display: flex;
@@ -145,14 +147,16 @@ header > p.link > a {
 }
 
 header > p.link > a:hover {
-    background-color:#C75C71;
+    background-color:#791127 ;
+    transition: 0.8s;
 }
 
 h1 {
+     color: white;
      font-family:'h1';
      text-align: center;
-     font-size: 2em;
-     padding: 10px;
+     font-size: 3.5em;
+     padding: 50px;
      height: 100px;
 }
 
@@ -160,8 +164,7 @@ p.carta {
      font-family: 'romantico';
      text-align: center;
      font-size: 2em;
-     background-color: rgba(255, 255, 255, 0.355);
-     text-shadow: 1px 0px 0px rgba(0, 0, 0, 0.314);
+     text-shadow: 1px 0px 0px rgba(0, 0, 0, 0.627);
 }
 
 div.foto {
@@ -172,10 +175,11 @@ div.foto {
 }
 
 div.foto > img.foto1 {
+    border: 5px solid black;
     flex: auto;
     margin:100px 100px;
-    height: 800px;
-    width: 800px;
+    height: 600px;
+    width: 400px;
 }
 
 footer {

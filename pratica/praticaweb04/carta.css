@@ -32,3 +32,13 @@ article > h1 {
     font-family: "h1";
     text-align: center;
 }
+
+@media screen and (min-width:1200px) {
+    article {
+        margin: 0px 350px 0px 350px;
+    }
+
+    h1 {
+        font-size: 3.5em;
+    }
+}
