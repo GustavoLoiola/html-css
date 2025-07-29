@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+/* 
+Vermelho vivo = #E50914
+Branco = #FFFFFF
+Cinza escuro grafite = #1F1F1F
+Branco gelo	= #F4F4F4
+Cinza claro = #BDBDBD
+*/
+
+body {
+    background-color: #1F1F1F;
+    color: white;
+}
+
+header {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: auto;
+    justify-content: space-between;
+}
+
+img {
+    width: 200px;
+}
