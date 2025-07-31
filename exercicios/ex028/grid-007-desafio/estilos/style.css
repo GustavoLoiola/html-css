@@ -12,16 +12,17 @@ body, html {
     margin: 0px;
     background-color: #645f5f;
     color: white;
+    box-sizing: border-box;
 }
 
 header {
     position: fixed;
-    background-color: #1F1F1F;
+    background-color: #1f1f1f;
 }
 
 div.nav {
     display: grid;
-    grid-template-columns: 3fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 2fr;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 2fr;
     justify-items: center;
     justify-content: space-between;
     align-content: center;
@@ -31,16 +32,69 @@ div.nav {
     width: 100vw;
 }
 
-img#logo {
-    width: 150px;
-    border-radius: 5px;
-    justify-self: start;
+a.linkNav {
+    color: #BDBDBD;
+    text-decoration: none;
 }
 
-p#pesquisa {
-    border: 2px solid red;
+a.linkNav:hover {
+    color: #E50914;
+    transition: 0.1s;
+    text-decoration: underline;
+}
+
+img#logo {
+    width: 80;
+    border-radius: 5px;
+    justify-self: start;
+    height: 55px;
+    margin-left: 20px;
+}
+
+div.search {
+    display: flex;
+    align-items: center;
+    background-color: #BDBDBD;
+    margin: 20px auto;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 5px 10px;
+    width: 200px;
+    height: 20px;
+}
+
+div.search:hover {
+    background-color: #6b6767;
+}
+
+#searchInput {
+    padding: 8px;
+    border: none;
+    background-color: transparent;
+    width: 100%;
+    outline: none;
+}
+
+.search > label {
+    height: 20px;
 }
 
 div#simbolos  {
+    display: flex;
+    align-items: center;
     justify-self: center;
+    color: #E50914;
+}
+
+span#cor, span#car, span#add {
+    color: #E50914;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+span#cor:hover, span#car:hover, span#add:hover {
+    color: #BDBDBD;
+    transition: 0.3s;
+    text-decoration: none;
+    cursor: pointer;
 }
