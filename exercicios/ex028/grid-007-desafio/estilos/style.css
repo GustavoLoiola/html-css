@@ -25,6 +25,14 @@ header {
     background-color: #1f1f1f;
 }
 
+h1 {
+    font-size: 2em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #E50914;
+    margin-left: 10px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.336);
+}
+
 
 div#subheader {
     display: grid;
@@ -192,7 +200,7 @@ div#categorias {
     height: 350px;
     background-color: #bdbdbd46;
     margin-top: 100px;
-    padding-bottom: 20px;
+    padding-bottom: 50px;
     margin-bottom: 0px;
    
 }
@@ -206,7 +214,7 @@ div#categorias {
     margin-left: 7vw;
     
 
-    color: black;
+    color: #E50914;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
@@ -224,6 +232,7 @@ div#categorias {
 footer {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     justify-items: start;
 
     background-color: black;
@@ -243,14 +252,16 @@ img.redes {
 }
 
 footer > div > h3 {
+    color: white;
     font-size: 1em;
-    
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 footer > div > p > a {
     text-decoration: none;
     color: white;
-    font-size: 1em;
+    font-size: 0.9em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 div#bandeira {
@@ -268,3 +279,44 @@ div#bandeira {
     height: 20px;
     border-radius: 3px;
 } 
+
+.footer-divider {
+    grid-row-start: 2; 
+    grid-column-start: 1;
+    grid-row-end: 3;
+    grid-column-end: 5;
+
+    width: 90vw;
+    height: 1px;
+    background-color: white; /* cor da linha */
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+div#subfooter {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-start: 3; 
+    grid-column-start: 1;
+    grid-row-end: 4;
+    grid-column-end: 5;
+    align-items: start;
+    justify-items: center;
+
+    width: 90vw;
+}
+
+
+#subfooter > div > a {
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 0.8em;
+    text-decoration: none;
+    margin: 10px;
+
+}
+
+#subfooter > p {
+    font-size: 0.8em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
