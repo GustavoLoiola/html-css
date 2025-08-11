@@ -25,6 +25,20 @@ header {
     background-color: #1f1f1f;
 }
 
+span#menu {
+    display: none;
+    color: #E50914;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+span#menu:hover {
+    color: #BDBDBD;
+    transition: 0.3s;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 h1 {
     font-size: 2em;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -54,10 +68,14 @@ div#subheader > div > a:hover {
     color: #E50914;
 }
 
+div#simbolos-pq {
+    display: none;
+}
 
-div.nav {
+
+menu#nav {
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 2fr;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 1fr 2fr;
     justify-items: center;
     justify-content: space-between;
     align-content: center;
@@ -147,6 +165,10 @@ img#foto-destaque {
     cursor: pointer;
 }
 
+img#foto-destaque-pequena {
+    display: none;
+}
+
 h1#destaque {
     color: #1f1f1f;
     text-align: center;
@@ -194,7 +216,7 @@ button {
 button:hover {
     background-color: #E50914;
     color: white;
-    transition: 0.5s;
+    transition: 0.7s;
     transform: scale(1.2);
 }
 
@@ -223,13 +245,14 @@ div#categorias {
     align-content: center;
     align-items: center;
     justify-content: space-evenly;
-    justify-items: center;
+    justify-items: left;
 
     height: 350px;
     background-color: #bdbdbd46;
-    margin-top: 100px;
-    padding-bottom: 50px;
-    margin-bottom: 0px;
+    margin-top: 80px;
+    padding: 50px;
+    margin-bottom: 20px;
+    padding-left: 100px;
    
 }
 
@@ -239,8 +262,7 @@ div#categorias {
     grid-row-end: 2;
     grid-column-end: 5;
     justify-self: left;
-    margin-left: 7vw;
-    
+    margin-left: -20px;
 
     color: #E50914;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -251,6 +273,7 @@ div#categorias {
     text-decoration: none;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 1.2em;
+    margin-right: 20px;
 }
 
 #categorias > p > a:hover {
@@ -348,3 +371,4 @@ div#subfooter {
     font-size: 0.8em;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+

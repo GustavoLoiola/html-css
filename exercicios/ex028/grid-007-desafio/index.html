@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dalia Modas</title>
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/telas-medias.css">
     <link rel="stylesheet" href="estilos/telas-pequenas.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" >
     <link rel="shortcut icon" href="imagens/icone.png" type="image/x-icon">
@@ -12,19 +13,24 @@
 <body>
     <header>
         <div id="subheader">
+            <div id="simbolos-pq">
+                <span class="material-symbols-outlined" id="cor">favorite</span>
+                <span class="material-symbols-outlined" id="car">shopping_cart</span>
+                <span class="material-symbols-outlined" id="add">person_add</span>
+            </div>
             <div>
                 <a href="#">Ajuda</a>
-                <a href="#">Acompnahe seu pedido</a>
+                <a href="#">Acompanhe seu pedido</a>
                 <a href="#">Saldo</a>
             </div>
         </div>
         </div>
-        <div class="nav"> 
+        <span class="material-symbols-outlined" id="menu" onclick="clickMenu">Menu</span>
+        <menu id="nav"> 
             <img src="imagens/logo-transparente.png" alt="Logo Dalia Modas" id="logo">
             <a href="#" class="linkNav">Feminino</a>
             <a href="#" class="linkNav">Masculino</a>
             <a href="#" class="linkNav">Infantil</a>
-            <a href="#" class="linkNav">Dia dos pais</a>
             <a href="#" class="linkNav">Novidades</a>
             <a href="#" class="linkNav">Marcas</a>
             <div class="search">
@@ -38,10 +44,11 @@
                 <span class="material-symbols-outlined" id="car">shopping_cart</span>
                 <span class="material-symbols-outlined" id="add">person_add</span>
             </div>
-        </div>
+        </menu>
     </header>
     <main>
-        <img src="imagens/img-principal.png" alt="" id="foto-destaque">
+        <img src="imagens/img-principal.png" alt="imagem-telas-grandes" id="foto-destaque">
+        <img src="imagens/ChatGPT Image 1 de ago. de 2025, 12_23_52.png" alt="imagem-telas-pequenas" id="foto-destaque-pequena">
          <h1 id="destaque">Novidades imperdíveis</h1>
          <h2 id="frete">Frete Grátis a partir de R$99,99</h2>
          <div id="quadrado">
@@ -108,7 +115,7 @@
             <h3>Redes Sociais</h3>
             <a href="https://www.instagram.com/dalia_modas_mairipora/"><img src="imagens/logo-instagram.jpg" alt="" class="redes"></a>
             <a href=""><img src="imagens/logo-shopee.jpg" alt="" class="redes"></a>
-            <h3>Formas de pagamento</h3>
+            <h3 id="formas-pagamento">Formas de pagamento</h3>
                 <div id="bandeira">
                    <img src="imagens/mastercard.svg" alt="bandeira-mastercard">
                    <img src="imagens/visa.svg" alt="bandeira-visa">
@@ -125,5 +132,14 @@
             <p>© 2025 Dalia Modas. Todos os direitos reservados. CNPJ: 07.002.442/0001-16 Rua XV de Novembro, N°65, Centro - CEP 01013-001 - Mairiporã - SP</p>
          </div>
     </footer>
+    <script>
+        function clickMenu() {
+           if (nav.style.display == 'block') {
+            nav.style.display = 'none'
+           } else {
+            nav.style.display = 'block'
+           }
+        }
+    </script>
 </body>
 </html>

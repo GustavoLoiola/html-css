@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+@media (max-width: 1140px) {
+
+   div#subheader {
+    height: 25px;
+    grid-template-columns: 1fr 1fr;
+   }
+
+   menu#nav {
+    grid-template-columns: 150px 50px 60px 60px 60px 60px 60px 100px;
+   }
+
+   div.search {
+    width: 130px;
+   }
+  
+   div#simbolos {
+    display: none;
+   }
+
+   div#simbolos-pq {
+    display: block;
+    justify-self: left;
+   }
+
+   div#bandeira {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+   }
+
+   footer {
+    grid-template-columns: 1fr 1fr 0.8fr 1.2fr;
+   }
+}

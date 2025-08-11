@@ -1,10 +1,25 @@
 @charset "UTF-8";
 
-@media (max-width: 900px) {
-    p {
-        color: blue;
-    }
-    header {
-        background-color: yellow;
-    }
+@media (max-width: 850px) {
+
+   body {
+      background-color: yellow;
+   }
+
+   span#menu {
+      display: block;
+   }
+
+   img#foto-destaque {
+   display: none;
+   }
+
+   img#foto-destaque-pequena {
+   display: block;
+   padding-top: 120px;
+   height: 500px;
+   width: 100vw;
+   }
+
+   
 }
