@@ -32,4 +32,11 @@
    footer {
     grid-template-columns: 1fr 1fr 0.8fr 1.2fr;
    }
+
+   div#subfooter > div {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: 1fr 1fr;
+   justify-items: start;
+   }
 }
